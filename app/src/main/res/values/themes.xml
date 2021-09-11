@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.Light.NoActionBar">
+    </style>
+
+    <style name="btn_primary">
+        <item name="cornerRadius">0dp</item>
+        <item name="backgroundTint">#1C72C8</item>
+        <item name="android:layout_height">130dp</item>
+    </style>
+
+    <style name="btn_secondary">
+        <item name="cornerRadius">0dp</item>
+        <item name="backgroundTint">#535C77</item>
+        <item name="android:layout_height">130dp</item>
+    </style>
+
+    <style name="btn_danger">
+        <item name="cornerRadius">0dp</item>
+        <item name="backgroundTint">#FF5C93</item>
+        <item name="android:layout_height">130dp</item>
+    </style>
+
+    <style name="btn_teal">
+        <item name="cornerRadius">0dp</item>
+        <item name="backgroundTint">#FF018786</item>
+        <item name="android:layout_height">130dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/history"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/activity"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/time"
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_100">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/standing" />
+
+            <TextView
+                android:id="@+id/standing_time"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/three_pts" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_100">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/walking" />
+
+            <TextView
+                android:id="@+id/walking_time"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/three_pts" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_100">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/running" />
+
+            <TextView
+                android:id="@+id/running_time"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/three_pts" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_100">
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/others" />
+
+            <TextView
+                android:id="@+id/others_time"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/three_pts" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/reset"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
